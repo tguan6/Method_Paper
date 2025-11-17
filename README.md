@@ -6,7 +6,7 @@ This repository contains two ImageJ/Fiji macros used for analyzing fluorescence 
 
 ## Included Macros
 
-### 1. NuclearSegmentation_EdU_Intensity.ijm
+### 1. Nuclear_Masking_EdU_Measurement.ijm
 **Purpose:**  
 Automates batch processing of images to perform:
 - Nuclear segmentation using channel C4 (e.g., DAPI/Hoechst)
@@ -39,8 +39,7 @@ Automates batch processing of images to perform:
 - For each image: `filename-processed.tif` with ROIs overlaid
 
 ---
-
-# Foci_Crop_Split_For_Averaging.ijm
+### 2. AveragingCenteredonFoci-111023.ijm
 
 ### Purpose
 This ImageJ macro extracts square ROIs centered on nuclear foci and saves:
