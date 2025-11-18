@@ -1,10 +1,10 @@
 # ImageJ/FiJi Macros for Foci-Centered enrichment profiling
 
-This pipeline contains two ImageJ/FiJi macros used for ROI Extraction, Nuclear Segmentation, and single cell Intensity Quantification of fluorescence microscopy images. These macros were developed for single-cell analysis of transcription-associated DNA repair, and support batch processing, reproducible intensity measurement, and extraction of foci-centered regions for averaging. The AveragingCenteredonFoci-111023.ijm was used in this [publication](https://doi.org/10.1016/j.celrep.2025.115539) and for our study. For this script, contact [Jane Lee](ylee219@jh.edu) for support. The Nuclear_Masking&Intensity_Measurement.ijm is created by Tianyi Guan, contact [Tianyi Guan](tguan6@jh.edu) for support. 
+This pipeline contains two ImageJ/FiJi macros used for ROI Extraction, Nuclear Segmentation, and single cell Intensity Quantification of fluorescence microscopy images. These macros were developed for single-cell analysis of transcription-associated DNA repair, and support batch processing, reproducible intensity measurement, and extraction of foci-centered regions for averaging. For support, please contact [Tianyi Guan](tguan6@jh.edu). 
 
 --- 
 
-### 1. AveragingCenteredonFoci-111023.ijm
+### 1. Foci_Centered_Enrichment_Profiling.ijm
 ### Input Requirement
 This macro requires a multichannel TIFF image containing a single cell, typically obtained by cropping from a parent file such as a .czi, .lif, .nd2, or other microscope-specific format.
 - The TIFF must contain all relevant fluorescent channels (e.g., YFP-MCP, AF594, Hoechst).
@@ -47,31 +47,31 @@ Repeat the process for focus in all the images and save cropped single channel i
 ## Notes
 - Requires Fiji/ImageJ (ImageJ 1.53+ recommended).  
 - Record ROI size, imaging settings, and channel order for reproducibility.  
-- This macro was adapted from and inspired by analysis code developed by Jane Lee, whose averaging-based foci quantification approach shaped the workflow implemented here.  
 - These macros support workflows involving transcription-coupled DNA repair imaging, MS2 reporter visualization, TOP1cc quantification, and EdU-based cell cycle segmentation.
 
 ---
 
-# Citation
+## Citation
 
-If you use this macro in published work, please cite the paper introducing the foci-averaging analysis framework developed by Jane Lee:
+- This macro was adapted from and inspired by analysis code developed by Jane Lee, whose averaging-based foci quantification approach shaped the workflow implemented here. If you use this macro in published work, please cite the paper introducing the foci-averaging analysis framework developed by Jane Lee:
 
-### **Primary Reference**
+### **Reference**
 So, C.L., Lee, J., et al. *TFE3 fusion oncoprotein condensates drive transcriptional reprogramming and cancer progression in translocation renal cell carcinoma.* **Cell Reports** (2025).  
 https://doi.org/10.1016/j.celrep.2025.115539
 
-### 2. Nuclear_Masking&Intensity_Measurement.ijm
+### **Optional** 2. Nuclear_Masking&Intensity_Measurement.ijm
+
+**Input Requirements:**
+- Multichannel fluorescence images (supports .tif/.tiff, .jpg/.jpeg, .png)
+- Must contain the nuclear marker in one of the channel
+- Measurement channel (Cell-cycle marker or target of interset) is chosen by the user
+
 **Purpose:**  
 Automates batch processing of images to perform:
 - Nuclear segmentation using channel C4 (e.g., DAPI/Hoechst)
 - Measurement of EdU or IF intensity in any selected channel (C1–C4)
 - Export of per-nucleus measurements to a CSV file
 - Saving of processed images with ROIs overlaid
-
-**Input Requirements:**
-- Multichannel fluorescence images (supports .tif/.tiff, .jpg/.jpeg, .png)
-- Must contain the nuclear marker in one of the channel
-- Measurement channel (Cell-cycle marker or target of interset) is chosen by the user
 
 **How to Use:**
 1. Run the macro in Fiji.  
@@ -92,6 +92,6 @@ Automates batch processing of images to perform:
 - `Intensity_summary.csv` — Contains Filename, ROI#, Area, Mean Intensity
 - For each image: `filename-processed.tif` with ROIs overlaid
 
-# Citation
+**Citation**
 
-- This script is created by Tianyi Guan, contact tguan6@jh.edu for support. 
+- Guan.T, Shi. Y, Lee. T.H, Oberdoerffer.P. *Visualizing DNA repair factor recruitment at sites of transcription in single cells*, **Chromosome Research** (2025). 
