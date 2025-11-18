@@ -2,7 +2,7 @@
 
 This pipeline contains two ImageJ/Fiji macros used for analyzing fluorescence microscopy images. These scripts were developed for single-cell analysis of transcription-associated DNA repair, image intensity measurement, and foci-centered enrichment profiling. The macros support batch processing, reproducible intensity measurement, and extraction of foci-centered regions for averaging. The AveragingCenteredonFoci-111023.ijm was used in this [publication](https://doi.org/10.1016/j.celrep.2025.115539) and validated by our group. For this script, contact [Jane Lee](ylee219@jh.edu) for support. 
 
----
+--- 
 
 ### 1. AveragingCenteredonFoci-111023.ijm
 ### Imput Requirement
