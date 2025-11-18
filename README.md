@@ -1,6 +1,6 @@
-# ImageJ/Fiji Macros for Foci-Centered ROI Extraction, Nuclear Segmentation, and Intensity Quantification
+# ImageJ/FiJi Macros for Foci-Centered enrichment profiling
 
-This pipeline contains two ImageJ/Fiji macros used for analyzing fluorescence microscopy images. These scripts were developed for single-cell analysis of transcription-associated DNA repair, image intensity measurement, and foci-centered enrichment profiling. The macros support batch processing, reproducible intensity measurement, and extraction of foci-centered regions for averaging. The AveragingCenteredonFoci-111023.ijm was used in this [publication](https://doi.org/10.1016/j.celrep.2025.115539) and for our study. For this script, contact [Jane Lee](ylee219@jh.edu) for support. The Nuclear_Masking&Intensity_Measurement.ijm is created by Tianyi Guan, contact [Tianyi Guan](tguan6@jh.edu) for support. 
+This pipeline contains two ImageJ/FiJi macros used for ROI Extraction, Nuclear Segmentation, and single cell Intensity Quantification of fluorescence microscopy images. These macros were developed for single-cell analysis of transcription-associated DNA repair, and support batch processing, reproducible intensity measurement, and extraction of foci-centered regions for averaging. The AveragingCenteredonFoci-111023.ijm was used in this [publication](https://doi.org/10.1016/j.celrep.2025.115539) and for our study. For this script, contact [Jane Lee](ylee219@jh.edu) for support. The Nuclear_Masking&Intensity_Measurement.ijm is created by Tianyi Guan, contact [Tianyi Guan](tguan6@jh.edu) for support. 
 
 --- 
 
