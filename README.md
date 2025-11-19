@@ -22,7 +22,7 @@ These outputs can be averaged or profiled to quantify mean focus intensity, spat
 ### How to Use
 1. Open your multichannel .tif/.tiff image in Fiji/ImageJ.  
 2. Open **ROI Manager** (`Analyze → Tools → ROI Manager`).  
-3. Create a **square ROI**: ROI Manager → **More → Specify** (e.g., 30×30 or 50×50 px).  
+3. Create a **square ROI**: ROI Manager → **More → Specify** (We used 58x58 px ROI, the size can be adjusted to fit different purposes).  
 4. Ensure **only one ROI** is present in ROI Manager.  
 5. Run the macro.  
 6. When the script pauses (`waitForUser`), move the ROI to center on a focus and click **OK**.  
